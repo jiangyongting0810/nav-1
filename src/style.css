@@ -1,0 +1,132 @@
+*{box-sizing: border-box;}
+*::before, *::after{box-sizing: border-box;}
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+img{max-width: 100%;max-height: 100%;}
+body{background: #F5F5F5;}
+a{color: inherit; text-decoration: none;}
+*{font-family: 'PingFang SC';}
+
+.globaHeader{
+    margin: 32px 17px ;
+}
+.searchForm{
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width:500px){
+    .searchForm{
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+}
+.searchForm > input{
+    width: 100%;
+    margin-right: 8px;
+    height: 30px;
+    padding: 5px 10px;
+    border: none;
+    color: #ADADAD;
+    border-radius: 4px;
+}
+.searchForm > button{
+    white-space: nowrap;
+    padding: 5px 32px;
+    border: none;
+    background-color: #3687FF;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 4px 16px rgba(54, 134, 255, 0.5);
+}
+.siteList{
+    margin: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.globaMain{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 744px;
+}
+@media (min-width:500px){ 
+    .siteList{
+        margin: 0px;
+        margin-right: -32px;
+        justify-content: flex-start;
+    }
+    .siteList > li{
+        margin-right: 32px;
+    }
+}
+.siteList > li{
+    margin-bottom: 16px;
+    
+}
+.siteList .site{
+    width: 162px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 4px;
+    padding: 16px 0px;
+    position: relative;
+    cursor: pointer; /*鼠标变成手*/
+}
+
+.siteList .site .logo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.siteList .site .link{
+    margin-top: 10px;
+    font-size: 14px;
+
+}
+.siteList .addButton{
+    width: 162px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.site .icon{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: none;
+}
+.siteList .site:hover .icon{
+    display: block;
+}
+.siteList .site .icon:hover{
+    background:rgb(245, 245, 245);
+}
+.siteList .addButton .icon{
+    width: 60px;
+    height: 60px;
+}
+.siteList .addButton .text{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.siteList .addButton .icon-wrapper{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
